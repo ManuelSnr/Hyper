@@ -1,0 +1,7 @@
+{
+  "buildCommand": "echo 'No build needed'",
+  "outputDirectory": "./Landing page",
+  "devCommand": "echo 'No dev command'",
+  "cleanUrls": true,
+  "trailingSlash": false
+}
