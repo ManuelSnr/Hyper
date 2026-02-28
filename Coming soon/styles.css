@@ -336,6 +336,15 @@ nav {
   transition: color 0.3s ease;
 }
 
+.email-input:-webkit-autofill,
+.email-input:-webkit-autofill:hover,
+.email-input:-webkit-autofill:focus,
+.email-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.09) inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .email-input.error {
   color: #ff6b6b;
 }
@@ -561,11 +570,6 @@ nav {
     padding: 10px 14px;
     font-size: 14px;
     min-width: 110px;
-  }
-  .game-tile {
-    width: 150px;
-    height: 150px;
-    font-size: 40px;
   }
 }
 
