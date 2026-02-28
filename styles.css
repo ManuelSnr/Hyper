@@ -368,10 +368,18 @@ nav {
     box-shadow 0.2s;
 }
 
+.btn-primary svg {
+  transition: transform 0.3s ease;
+}
+
 .btn-primary:hover {
   background: #c8ff70;
   transform: translateY(-2px);
   box-shadow: 0 12px 40px rgba(180, 255, 87, 0.3);
+}
+
+.btn-primary:hover svg {
+  transform: translateX(4px);
 }
 
 .btn-secondary {
@@ -833,10 +841,18 @@ nav {
   margin-top: 8px;
 }
 
+.game-cta svg {
+  transition: transform 0.3s ease;
+}
+
 .game-cta:hover {
   background: #c8ff70;
   transform: translateY(-2px);
   box-shadow: 0 12px 32px rgba(180, 255, 87, 0.3);
+}
+
+.game-cta:hover svg {
+  transform: translateX(4px);
 }
 
 .game-visual {
