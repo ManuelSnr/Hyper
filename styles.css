@@ -944,6 +944,9 @@ nav {
   border-radius: 100px;
   text-decoration: none;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   transition:
     background 0.2s,
     transform 0.2s;
@@ -952,9 +955,17 @@ nav {
   flex-shrink: 0;
 }
 
+.cta-banner-btn svg {
+  transition: transform 0.3s ease;
+}
+
 .cta-banner-btn:hover {
   background: #111;
   transform: scale(1.03);
+}
+
+.cta-banner-btn:hover svg {
+  transform: translateX(4px);
 }
 
 /* ── FOOTER ── */
