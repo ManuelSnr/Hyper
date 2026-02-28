@@ -345,7 +345,7 @@ nav {
   display: flex;
   gap: 16px;
   align-items: center;
-  margin-top: 44px;
+  margin-top: 28px;
   position: relative;
   z-index: 1;
   animation: fadeUp 0.5s ease 0.24s both;
@@ -491,7 +491,7 @@ nav {
 .strip-track {
   display: flex;
   gap: 0;
-  animation: ticker 22s linear infinite;
+  animation: ticker 15s linear infinite;
   white-space: nowrap;
 }
 
@@ -1071,6 +1071,9 @@ footer {
   .hero {
     padding: 100px 24px 80px;
   }
+  .hero-actions {
+    margin-top: 28px;
+  }
   .hero-actions .btn-secondary {
     display: none;
   }
@@ -1080,7 +1083,10 @@ footer {
   .about {
     grid-template-columns: 1fr;
     padding: 80px 24px;
-    gap: 48px;
+    gap: 24px;
+  }
+  .stats-collage-image {
+    max-height: 480px;
   }
   .services {
     padding: 0 24px 80px;
