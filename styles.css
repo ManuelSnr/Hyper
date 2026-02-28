@@ -33,9 +33,14 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  max-width: 1920px;
-  margin: 0 auto;
   cursor: none;
+}
+
+/* Main content wrapper with max-width */
+body > *:not(.strip):not(footer):not(nav) {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ── CUSTOM CURSOR ── */
@@ -883,8 +888,12 @@ nav {
 }
 
 /* ── CTA BANNER ── */
+.cta-section {
+  padding: 0 56px 160px;
+}
+
 .cta-banner {
-  margin: 0 56px 160px;
+  margin: 0;
   background: var(--accent);
   border-radius: 24px;
   padding: 72px 64px;
@@ -933,6 +942,7 @@ nav {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.55);
   line-height: 1.6;
+  max-width: 600px;
 }
 
 .cta-banner-btn {
@@ -1114,8 +1124,11 @@ footer {
     height: 280px;
     max-width: 90%;
   }
+  .cta-section {
+    padding: 0 24px 80px;
+  }
   .cta-banner {
-    margin: 0 24px 80px;
+    margin: 0;
     padding: 48px 36px;
     flex-direction: column;
     align-items: flex-start;
