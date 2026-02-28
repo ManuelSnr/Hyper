@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 body {
@@ -230,7 +231,7 @@ nav {
 }
 
 .hero-tag {
-  display: inline-flex;
+  display: none;
   align-items: center;
   gap: 8px;
   font-family: var(--mono);
@@ -744,6 +745,7 @@ nav {
 /* ── FEATURED GAME ── */
 .featured {
   padding: 0 56px 160px;
+  scroll-margin-top: 100px;
 }
 
 .featured-header {
@@ -982,10 +984,9 @@ nav {
 footer {
   border-top: 1px solid var(--border);
   padding: 48px 56px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -994,6 +995,7 @@ footer {
   align-items: center;
   text-decoration: none;
   transition: opacity 0.3s ease;
+  justify-self: start;
 }
 
 .footer-logo img {
@@ -1006,28 +1008,63 @@ footer {
   opacity: 0.8;
 }
 
-.footer-links {
-  display: flex;
-  gap: 28px;
-  list-style: none;
-}
-
-.footer-links a {
-  font-size: 13px;
-  color: var(--muted);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.footer-links a:hover {
-  color: var(--text);
-}
-
 .footer-copy {
   font-family: var(--mono);
   font-size: 11px;
   color: rgba(255, 255, 255, 0.2);
   letter-spacing: 0.06em;
+  text-align: center;
+  justify-self: center;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-self: end;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--surface);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+
+.social-icon-default {
+  opacity: 1;
+  filter: brightness(0) invert(1);
+}
+
+.social-icon-hover {
+  opacity: 0;
+  filter: none;
+}
+
+.social-link:hover {
+  background: var(--surface2);
+  transform: translateY(-2px);
+}
+
+.social-link:hover .social-icon-default {
+  opacity: 0;
+}
+
+.social-link:hover .social-icon-hover {
+  opacity: 1;
 }
 
 /* ── ANIMATIONS ── */
@@ -1135,8 +1172,31 @@ footer {
   }
   footer {
     padding: 40px 24px;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 16px;
+  }
+
+  .footer-logo {
+    flex: 0 0 auto;
+    order: 1;
+    justify-self: auto;
+  }
+
+  .footer-social {
+    flex: 0 0 auto;
+    order: 2;
+    justify-self: auto;
+  }
+
+  .footer-copy {
+    flex: 1 1 100%;
     text-align: center;
+    margin-top: 12px;
+    order: 3;
+    justify-self: auto;
   }
 }
