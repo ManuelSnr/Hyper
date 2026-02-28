@@ -1,0 +1,26 @@
+{
+  "name": "HyperMetaverse",
+  "short_name": "HyperMetaverse",
+  "description": "Hypercasual Games Publisher",
+  "icons": [
+    {
+      "src": "Assets/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "Assets/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "Assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#b4ff57",
+  "background_color": "#0a0a0a",
+  "display": "standalone",
+  "start_url": "/"
+}
