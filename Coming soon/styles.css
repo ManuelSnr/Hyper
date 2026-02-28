@@ -231,11 +231,11 @@ nav {
 }
 
 .badge-text:first-of-type {
-  margin-right: 6px;
+  margin-right: 5px;
 }
 
 .badge-text:last-of-type {
-  margin-left: 6px;
+  margin-left: 5px;
 }
 
 .badge-arrow {
