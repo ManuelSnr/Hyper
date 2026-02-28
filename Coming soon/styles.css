@@ -22,8 +22,6 @@ nav {
   display: flex;
   align-items: center;
   padding: 40px 80px;
-  background: rgba(15, 8, 30, 0.8);
-  backdrop-filter: blur(10px);
   z-index: 100;
 }
 
