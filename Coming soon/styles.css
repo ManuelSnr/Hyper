@@ -462,6 +462,13 @@ nav {
     margin: 8px 0;
   }
 
+  /* Disable purple badge arrow hover effect on mobile, keep glow */
+  .badge-purple:hover .badge-arrow {
+    opacity: 0;
+    max-width: 0;
+    margin: 0;
+  }
+
   .coming-soon-label {
     margin-bottom: 0px;
   }
