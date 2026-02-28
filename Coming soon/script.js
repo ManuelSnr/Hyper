@@ -13,6 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const email = emailInput.value.trim();
 
+      // Blur input to close keyboard immediately
+      emailInput.blur();
+
+      // Small delay to allow keyboard to close smoothly
+      await new Promise((resolve) => setTimeout(resolve, 100));
+
       // Validate email format
       if (!email) {
         showError("Please enter an email address");
