@@ -485,7 +485,7 @@ nav {
   }
 
   .email-form {
-    max-width: 60%;
+    max-width: 80%;
   }
 
   .email-input {
@@ -495,6 +495,7 @@ nav {
   .join-btn {
     padding: 12px 20px;
     font-size: 14px;
+    min-width: 140px;
   }
 }
 
@@ -504,19 +505,19 @@ nav {
   }
 
   .carousel-container {
-    height: 500px;
+    height: 580px;
   }
 
   .hero-content {
-    padding-top: 320px;
+    padding-top: 400px;
   }
 
   .hero-title {
-    font-size: 50px;
+    font-size: 48px;
   }
 
   .badge {
-    font-size: 32px;
+    font-size: 30px;
     padding: 8px 20px;
     border-radius: 12px;
   }
@@ -543,11 +544,14 @@ nav {
     margin-bottom: 12px;
   }
 
+  .email-form {
+    max-width: 100%;
+  }
+
   .join-btn {
-    padding: 12px 16px;
-    font-size: 13px;
-    width: 100%;
-    min-width: auto;
+    padding: 10px 14px;
+    font-size: 12px;
+    min-width: 110px;
   }
   .game-tile {
     width: 150px;
@@ -616,12 +620,12 @@ nav {
 
   .email-input {
     font-size: 13px;
-    padding: 10px 0;
+    padding: 8px 0;
   }
 
   .join-btn {
-    padding: 10px 16px;
+    padding: 8px 12px;
     font-size: 12px;
-    min-width: auto;
+    min-width: 110px;
   }
 }
